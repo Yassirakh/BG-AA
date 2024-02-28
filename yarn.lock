@@ -1531,10 +1531,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@openzeppelin/contracts@npm:^4.8.1":
-  version: 4.9.3
-  resolution: "@openzeppelin/contracts@npm:4.9.3"
-  checksum: 4932063e733b35fa7669b9fe2053f69b062366c5c208b0c6cfa1ac451712100c78acff98120c3a4b88d94154c802be05d160d71f37e7d74cadbe150964458838
+"@openzeppelin/contracts@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "@openzeppelin/contracts@npm:5.0.1"
+  checksum: bc056d358a672f0d43ff5a372b5b65c6d3e9e49478f70bc00a5ad06ce9107400e8e8b8d94cf85dffca00b303ee8d15ac8def55d320ea54386dc81d6b98ddfabc
   languageName: node
   linkType: hard
 
@@ -1683,6 +1683,98 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@particle-network/aa@npm:^1.3.3":
+  version: 1.3.3
+  resolution: "@particle-network/aa@npm:1.3.3"
+  dependencies:
+    axios: ^1.3.6
+    uuid: ^8.3.2
+  checksum: 40700ed1d4b874c28f67bc3319cce07ac8bf61e8325e31b21be3988d36f3b0646b5aed134ded5b899403fa5bfcf73c19e588485a76c17d0f0a1e77469c151ac3
+  languageName: node
+  linkType: hard
+
+"@particle-network/analytics@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@particle-network/analytics@npm:1.0.1"
+  dependencies:
+    hash.js: ^1.1.7
+    uuidv4: ^6.2.13
+  checksum: e8b930f6f5b4d6a16da9071cd37845e310b096838a74dc230eab4857994e0dab59d0a8ec2b9abdf46ec011222e8aee740d3653b2d3a72023f4f66ed613e4cb64
+  languageName: node
+  linkType: hard
+
+"@particle-network/auth@npm:^1.3.1":
+  version: 1.3.1
+  resolution: "@particle-network/auth@npm:1.3.1"
+  dependencies:
+    "@particle-network/analytics": ^1.0.1
+    "@particle-network/chains": "*"
+    "@particle-network/crypto": ^1.0.1
+    buffer: ^6.0.3
+    draggabilly: ^3.0.0
+  checksum: 3c136df9e5514ac31be2fd28a3c12f2b5dbad389ff710a3356c70bd824b2273097e1c0b306e5ea9dd092557da4af17373a47b337279a08a29cca0a6f857b86b1
+  languageName: node
+  linkType: hard
+
+"@particle-network/chains@npm:*, @particle-network/chains@npm:^1.3.3":
+  version: 1.3.18
+  resolution: "@particle-network/chains@npm:1.3.18"
+  checksum: 87eb3dc019c723718dacc32b193248949e11d6471581d575ff099f47b561e29864aeb3b8a4ebcb6278bef041cdba50e7b6329e67b53535991f88a021b10f73c5
+  languageName: node
+  linkType: hard
+
+"@particle-network/crypto@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@particle-network/crypto@npm:1.0.1"
+  dependencies:
+    crypto-js: ^4.1.1
+    uuidv4: ^6.2.13
+  checksum: 45d871848119923c20c7b7fff4eb995c6f654ab9146b50dd915b83db5fdce05c2179fb7f24d64f2083a3cde2f1926ba37bf217483806ef296f0914a64c9c78a9
+  languageName: node
+  linkType: hard
+
+"@particle-network/provider@npm:^1.3.2":
+  version: 1.3.2
+  resolution: "@particle-network/provider@npm:1.3.2"
+  dependencies:
+    "@particle-network/chains": "*"
+    axios: ^1.3.6
+    uuid: ^8.3.2
+  peerDependencies:
+    "@particle-network/auth": "*"
+  checksum: cacaadfe433b8eabd8be479e62316fd58e9af175d9294a260e12f2b1d3b07de6b010ea7158631a5f1f8b83bb02f7997caa5b0cd9dd2c3aab0d94fa35ed2c8086
+  languageName: node
+  linkType: hard
+
+"@particle-network/rainbowkit-ext@npm:^1.3.2":
+  version: 1.3.2
+  resolution: "@particle-network/rainbowkit-ext@npm:1.3.2"
+  dependencies:
+    "@particle-network/auth": ^1.3.1
+    "@particle-network/provider": ^1.3.2
+  peerDependencies:
+    "@rainbow-me/rainbowkit": ~1.0.8
+    viem: ~0.3.19 || ^1.0.0
+    wagmi: ~1.0.1 || ~1.1.0 || ~1.2.0 || ~1.3.0
+  checksum: 06b354c811fc0fd543623e45d2003bccab1195ab77cdcdf6b7768922b7892019420b13099d7c7caac814e8b1bd6760b73dc423ae3ce9b55db343ba34943adde7
+  languageName: node
+  linkType: hard
+
+"@particle-network/rn-auth@npm:^1.3.10":
+  version: 1.3.10
+  resolution: "@particle-network/rn-auth@npm:1.3.10"
+  dependencies:
+    "@particle-network/chains": ^1.3.3
+    axios: ^1.6.2
+    bignumber.js: ^9.1.0
+    events: ^3.3.0
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: a795d1752559398938d168efa0595ad900c61de3f70f138029b110e0e33ac51ffa16af276d856e5c79ceedf5913df654a344c274d5d86c72441b022add17aaf6
+  languageName: node
+  linkType: hard
+
 "@pkgjs/parseargs@npm:^0.11.0":
   version: 0.11.0
   resolution: "@pkgjs/parseargs@npm:0.11.0"
@@ -1707,6 +1799,13 @@ __metadata:
     viem: ~0.3.19 || ^1.0.0
     wagmi: ~1.0.1 || ~1.1.0 || ~1.2.0 || ~1.3.0 || ~1.4.0
   checksum: b8e86aaf71c489757f3da8ff168d00bbd47a19e63e6077d7731f091d2d5bce76207791639615898b89b8aef167db68e41716b921bad35f345704e0d04f670312
+  languageName: node
+  linkType: hard
+
+"@remix-run/router@npm:1.15.1":
+  version: 1.15.1
+  resolution: "@remix-run/router@npm:1.15.1"
+  checksum: 5c404e64a95da7d2a06811c15e8b213cd1079bca546d8a78a1626264ac0b71361b9ce93269bda7209a938e5a22c25993902841f81240c58eb7ed0934e1781197
   languageName: node
   linkType: hard
 
@@ -1824,7 +1923,7 @@ __metadata:
     "@nomicfoundation/hardhat-ethers": ^3.0.5
     "@nomicfoundation/hardhat-network-helpers": ^1.0.6
     "@nomicfoundation/hardhat-verify": ^2.0.3
-    "@openzeppelin/contracts": ^4.8.1
+    "@openzeppelin/contracts": ^5.0.1
     "@typechain/ethers-v5": ^10.1.0
     "@typechain/ethers-v6": ^0.5.1
     "@typechain/hardhat": ^9.1.0
@@ -1860,6 +1959,11 @@ __metadata:
   dependencies:
     "@ethersproject/providers": ^5.7.2
     "@heroicons/react": ^2.0.11
+    "@particle-network/aa": ^1.3.3
+    "@particle-network/auth": ^1.3.1
+    "@particle-network/provider": ^1.3.2
+    "@particle-network/rainbowkit-ext": ^1.3.2
+    "@particle-network/rn-auth": ^1.3.10
     "@rainbow-me/rainbowkit": 1.3.5
     "@trivago/prettier-plugin-sort-imports": ^4.1.1
     "@types/node": ^17.0.35
@@ -1869,6 +1973,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.39.0
     "@uniswap/sdk-core": ^4.0.1
     "@uniswap/v2-sdk": ^3.0.1
+    "@web3uikit/core": ^1.1.5
     autoprefixer: ^10.4.12
     blo: ^1.0.1
     daisyui: 4.5.0
@@ -1891,6 +1996,7 @@ __metadata:
     typescript: ^5.1.6
     use-debounce: ^8.0.4
     usehooks-ts: ^2.13.0
+    userop: ^0.3.8
     vercel: ^32.4.1
     viem: 1.19.9
     wagmi: 1.4.12
@@ -2673,6 +2779,13 @@ __metadata:
   version: 2.0.4
   resolution: "@types/trusted-types@npm:2.0.4"
   checksum: 5256c4576cd1c90d33ddd9cc9cbd4f202b39c98cbe8b7f74963298f9eb2159c285ea5c25a6181b4c594d8d75641765bff85d72c2d251ad076e6529ce0eeedd1c
+  languageName: node
+  linkType: hard
+
+"@types/uuid@npm:8.3.4":
+  version: 8.3.4
+  resolution: "@types/uuid@npm:8.3.4"
+  checksum: 6f11f3ff70f30210edaa8071422d405e9c1d4e53abbe50fdce365150d3c698fe7bbff65c1e71ae080cbfb8fded860dbb5e174da96fdbbdfcaa3fb3daa474d20f
   languageName: node
   linkType: hard
 
@@ -3720,6 +3833,52 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@web3uikit/config@npm:*":
+  version: 0.1.2
+  resolution: "@web3uikit/config@npm:0.1.2"
+  checksum: 0e67b8e26013b818ad7219c21c69894d193fe868ab6acbf6827910e56934a25ede8142c66d4b30e705d8b11b021f7ff4867d821b7712a7c514d4afea39391ce5
+  languageName: node
+  linkType: hard
+
+"@web3uikit/core@npm:^1.1.5":
+  version: 1.1.5
+  resolution: "@web3uikit/core@npm:1.1.5"
+  dependencies:
+    "@web3uikit/config": "*"
+    "@web3uikit/icons": "*"
+    "@web3uikit/styles": "*"
+    react-router-dom: ^6.3.0
+  peerDependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  checksum: a804ebd53f80f3ec4f77e7d7be8e649fb04d93e6e93d27b0b175a33bd06042c244f134eb543790154f3eaf4b98408a8114f3c12e9e9eb3e506eaa4fec604a672
+  languageName: node
+  linkType: hard
+
+"@web3uikit/icons@npm:*":
+  version: 1.1.2
+  resolution: "@web3uikit/icons@npm:1.1.2"
+  dependencies:
+    "@web3uikit/config": "*"
+  peerDependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  checksum: c7d9908885605393f2f77b72719e28615b4fc15d1980e609201f4fb03865469e3c76fb259ad07ae61c6941ec1c85f87a3769886445b76a44deb54c6dc217074f
+  languageName: node
+  linkType: hard
+
+"@web3uikit/styles@npm:*":
+  version: 1.1.4
+  resolution: "@web3uikit/styles@npm:1.1.4"
+  dependencies:
+    "@web3uikit/config": "*"
+  peerDependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  checksum: 72a37f771fe51d9a5e8fbebafe625557c125104f3789132c2bdf819de816ef0c852fa5b908dbc2d78be1d28b264ce82e57f61ffe899884d8714a0cca6bc560dd
+  languageName: node
+  linkType: hard
+
 "JSONStream@npm:^1.3.5":
   version: 1.3.5
   resolution: "JSONStream@npm:1.3.5"
@@ -4429,6 +4588,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"axios@npm:^1.3.6, axios@npm:^1.6.2":
+  version: 1.6.7
+  resolution: "axios@npm:1.6.7"
+  dependencies:
+    follow-redirects: ^1.15.4
+    form-data: ^4.0.0
+    proxy-from-env: ^1.1.0
+  checksum: 87d4d429927d09942771f3b3a6c13580c183e31d7be0ee12f09be6d5655304996bb033d85e54be81606f4e89684df43be7bf52d14becb73a12727bf33298a082
+  languageName: node
+  linkType: hard
+
 "axobject-query@npm:^3.1.1":
   version: 3.2.1
   resolution: "axobject-query@npm:3.2.1"
@@ -4498,6 +4668,13 @@ __metadata:
   version: 3.3.0
   resolution: "bigint-crypto-utils@npm:3.3.0"
   checksum: 9598ce57b23f776c8936d44114c9f051e62b5fa654915b664784cbcbacc5aa0485f4479571c51ff58008abb1210c0d6a234853742f07cf84bda890f2a1e01000
+  languageName: node
+  linkType: hard
+
+"bignumber.js@npm:^9.1.0":
+  version: 9.1.2
+  resolution: "bignumber.js@npm:9.1.2"
+  checksum: 582c03af77ec9cb0ebd682a373ee6c66475db94a4325f92299621d544aa4bd45cb45fd60001610e94aef8ae98a0905fa538241d9638d4422d57abbeeac6fadaf
   languageName: node
   linkType: hard
 
@@ -5408,6 +5585,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"crypto-js@npm:^4.1.1":
+  version: 4.2.0
+  resolution: "crypto-js@npm:4.2.0"
+  checksum: f051666dbc077c8324777f44fbd3aaea2986f198fe85092535130d17026c7c2ccf2d23ee5b29b36f7a4a07312db2fae23c9094b644cc35f7858b1b4fcaf27774
+  languageName: node
+  linkType: hard
+
 "css-selector-tokenizer@npm:^0.8":
   version: 0.8.0
   resolution: "css-selector-tokenizer@npm:0.8.0"
@@ -5797,6 +5981,16 @@ __metadata:
   version: 16.3.1
   resolution: "dotenv@npm:16.3.1"
   checksum: 15d75e7279018f4bafd0ee9706593dd14455ddb71b3bcba9c52574460b7ccaf67d5cf8b2c08a5af1a9da6db36c956a04a1192b101ee102a3e0cf8817bbcf3dfd
+  languageName: node
+  linkType: hard
+
+"draggabilly@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "draggabilly@npm:3.0.0"
+  dependencies:
+    get-size: ^3.0.0
+    unidragger: ^3.0.0
+  checksum: 9e865d007f0249d5d5a367894093e3086c9758d3a0318fabe627495782f823c39ad6920504783135fa9da50cc72c2d3f3c6172d7b11563433a1559fa8a923b5d
   languageName: node
   linkType: hard
 
@@ -6877,7 +7071,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ethers@npm:^5.7.0, ethers@npm:^5.7.1":
+"ethers@npm:^5.7.0, ethers@npm:^5.7.1, ethers@npm:^5.7.2":
   version: 5.7.2
   resolution: "ethers@npm:5.7.2"
   dependencies:
@@ -6947,6 +7141,13 @@ __metadata:
     is-hex-prefixed: 1.0.0
     strip-hex-prefix: 1.0.0
   checksum: 1f42959e78ec6f49889c49c8a98639e06f52a15966387dd39faf2930db48663d026efb7db2702dcffe7f2a99c4a0144b7ce784efdbf733f4077aae95de76d65f
+  languageName: node
+  linkType: hard
+
+"ev-emitter@npm:^2.0.0":
+  version: 2.1.2
+  resolution: "ev-emitter@npm:2.1.2"
+  checksum: 1102823ef040684869256100e19a6c6aeeecd422d09a267d7c74e77023136eede2ee86ee475ad1019d30d1f7917557d74542d5665e9f91c398bd5814260af6b3
   languageName: node
   linkType: hard
 
@@ -7306,6 +7507,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"follow-redirects@npm:^1.15.4":
+  version: 1.15.5
+  resolution: "follow-redirects@npm:1.15.5"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: 5ca49b5ce6f44338cbfc3546823357e7a70813cecc9b7b768158a1d32c1e62e7407c944402a918ea8c38ae2e78266312d617dc68783fac502cbb55e1047b34ec
+  languageName: node
+  linkType: hard
+
 "for-each@npm:^0.3.3":
   version: 0.3.3
   resolution: "for-each@npm:0.3.3"
@@ -7651,6 +7862,13 @@ __metadata:
   version: 3.2.0
   resolution: "get-port@npm:3.2.0"
   checksum: 31f530326569683ac4b7452eb7573c40e9dbe52aec14d80745c35475261e6389160da153d5b8ae911150b4ce99003472b30c69ba5be0cedeaa7865b95542d168
+  languageName: node
+  linkType: hard
+
+"get-size@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "get-size@npm:3.0.0"
+  checksum: 9a475bce9a718322b80c20a9651a7b09c8ddb85d094131fda7d32ffe272442c3d0621df6a61b543a23ca741c261f96841078927e17acfc88957c2a6029ba5b34
   languageName: node
   linkType: hard
 
@@ -9038,6 +9256,13 @@ __metadata:
   bin:
     jiti: bin/jiti.js
   checksum: a7bd5d63921c170eaec91eecd686388181c7828e1fa0657ab374b9372bfc1f383cf4b039e6b272383d5cb25607509880af814a39abdff967322459cca41f2961
+  languageName: node
+  linkType: hard
+
+"js-base64@npm:^3.7.5":
+  version: 3.7.6
+  resolution: "js-base64@npm:3.7.6"
+  checksum: 4e1e82443c22f3f8f24902b071ea824069a28a16a86c3d8706e8c0741cace92cfb4affd093f52d13981369e10df840e54df8d0a59ede6dd2204a1f0aa4b64deb
   languageName: node
   linkType: hard
 
@@ -11446,6 +11671,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"proxy-from-env@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "proxy-from-env@npm:1.1.0"
+  checksum: ed7fcc2ba0a33404958e34d95d18638249a68c430e30fcb6c478497d72739ba64ce9810a24f53a7d921d0c065e5b78e3822759800698167256b04659366ca4d4
+  languageName: node
+  linkType: hard
+
 "psl@npm:^1.1.28":
   version: 1.9.0
   resolution: "psl@npm:1.9.0"
@@ -11662,6 +11894,30 @@ __metadata:
     "@types/react":
       optional: true
   checksum: e0dbb6856beaed2cff4996d9ca62d775686ff72e3e9de34043034d932223b588993b2fc7a18644750dd3d73eb19bd3f2cedb8d91f0e424c1ef8403010da24b1d
+  languageName: node
+  linkType: hard
+
+"react-router-dom@npm:^6.3.0":
+  version: 6.22.1
+  resolution: "react-router-dom@npm:6.22.1"
+  dependencies:
+    "@remix-run/router": 1.15.1
+    react-router: 6.22.1
+  peerDependencies:
+    react: ">=16.8"
+    react-dom: ">=16.8"
+  checksum: 01a074518663db1b64d9ee7fa22eb628544b74316057aab0c39ef58ad665f012df081e8523eb62c4e060272a67c8d90cccedb6a6dac4e8f71290f9be8aaab1f6
+  languageName: node
+  linkType: hard
+
+"react-router@npm:6.22.1":
+  version: 6.22.1
+  resolution: "react-router@npm:6.22.1"
+  dependencies:
+    "@remix-run/router": 1.15.1
+  peerDependencies:
+    react: ">=16.8"
+  checksum: b53fab4c507eca8af03581387e37d9a1616f5cda0639abd84ba223c502528324171c4fee0ad8b86a92ba00eb3de4bd77c25c107e1754eb62988c874a059f3060
   languageName: node
   linkType: hard
 
@@ -13827,6 +14083,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"unidragger@npm:^3.0.0":
+  version: 3.0.1
+  resolution: "unidragger@npm:3.0.1"
+  dependencies:
+    ev-emitter: ^2.0.0
+  checksum: c7dcfca17bfc49c1ef1f7006bb7c56cc4a03a82e7c0e1f14c10f0e2172b1fac796df1b9274c7312fded167fe9987e20d45b86599d9344a2d861c8aaa7f361cba
+  languageName: node
+  linkType: hard
+
 "unique-filename@npm:^3.0.0":
   version: 3.0.0
   resolution: "unique-filename@npm:3.0.0"
@@ -14026,6 +14291,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"userop@npm:^0.3.8":
+  version: 0.3.8
+  resolution: "userop@npm:0.3.8"
+  dependencies:
+    elliptic: ^6.5.4
+    ethers: ^5.7.2
+    js-base64: ^3.7.5
+  checksum: 2b55fa17311c3f414ef335edfb877d1144435eb5dab6e76065215c3813bfcc7c1bad8570141023166d8e6931f35cd98be2bcdd7a3f8d0426ddd3f63a9f2b8a51
+  languageName: node
+  linkType: hard
+
 "utf-8-validate@npm:^5.0.2":
   version: 5.0.10
   resolution: "utf-8-validate@npm:5.0.10"
@@ -14079,6 +14355,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"uuid@npm:8.3.2, uuid@npm:^8.3.2":
+  version: 8.3.2
+  resolution: "uuid@npm:8.3.2"
+  bin:
+    uuid: dist/bin/uuid
+  checksum: 5575a8a75c13120e2f10e6ddc801b2c7ed7d8f3c8ac22c7ed0c7b2ba6383ec0abda88c905085d630e251719e0777045ae3236f04c812184b7c765f63a70e58df
+  languageName: node
+  linkType: hard
+
 "uuid@npm:^3.3.2":
   version: 3.4.0
   resolution: "uuid@npm:3.4.0"
@@ -14088,12 +14373,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"uuid@npm:^8.3.2":
-  version: 8.3.2
-  resolution: "uuid@npm:8.3.2"
-  bin:
-    uuid: dist/bin/uuid
-  checksum: 5575a8a75c13120e2f10e6ddc801b2c7ed7d8f3c8ac22c7ed0c7b2ba6383ec0abda88c905085d630e251719e0777045ae3236f04c812184b7c765f63a70e58df
+"uuidv4@npm:^6.2.13":
+  version: 6.2.13
+  resolution: "uuidv4@npm:6.2.13"
+  dependencies:
+    "@types/uuid": 8.3.4
+    uuid: 8.3.2
+  checksum: 25b3ce1d5860c7fb2232270f20d36c320e52817356cc0dfc88610965e6faced3e7050b3628be08ed08092dffc099288ed24ac0404a2869d59963a2be1939f476
   languageName: node
   linkType: hard
 

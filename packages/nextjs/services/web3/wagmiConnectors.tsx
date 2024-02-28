@@ -1,3 +1,5 @@
+import { getParticleInstance } from "./particleSocialAuth";
+import { particleWallet } from "@particle-network/rainbowkit-ext";
 import { connectorsForWallets } from "@rainbow-me/rainbowkit";
 import {
   braveWallet,
@@ -64,6 +66,12 @@ const wallets = [
     : []),
   safeWallet({ ...walletsOptions }),
 ];
+
+const particleInstance = getParticleInstance(appChains);
+
+if (particleInstance != undefined) {
+  wallets.push(particleWallet({ chains: walletsOptions.chains, authType: "google" }));
+}
 
 /**
  * wagmi connectors for the wagmi context
